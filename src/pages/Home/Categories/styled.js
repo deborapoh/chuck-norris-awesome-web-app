@@ -4,16 +4,18 @@ import colors from "~/utils/colors";
 export const ListContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
-  width: 83vw;
-  justify-content: center;
-  margin: 45px 24px 0 24px;
+  width: 90vw;
+  justify-content: space-around;
+  margin: 24px 0 24px 0;
 `;
 
 export const BoxContainer = styled.div`
   display: flex;
-  width: 120px;
-  height: 120px;
-  margin: 0 20px 20px 0;
+  flex-direction: column;
+  cursor: pointer;
+  width: 140px;
+  height: 90px;
+  margin: 10px 0 24px 0;
   background-color: white;
   justify-content: center;
   align-items: center;
@@ -31,6 +33,8 @@ export const Title = styled.div`
 `;
 
 export const Icon = styled.img`
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
+  margin-bottom: 5px;
+  color: black;
 `;

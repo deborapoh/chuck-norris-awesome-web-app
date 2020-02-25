@@ -1,10 +1,12 @@
 import React from "react";
 import Categories from "./Categories";
-import { HomeContainer, Title } from "./styled";
+import { HomeContainer, Title, SubTitle, BottomLine } from "./styled";
 
 const Home = () => (
   <HomeContainer>
-    <Title>Selecione uma categoria:</Title>
+    <Title>Fatos incríveis de Chuck Norris</Title>
+    <BottomLine />
+    <SubTitle>Selecione uma categoria:</SubTitle>
     <Categories />
   </HomeContainer>
 );
