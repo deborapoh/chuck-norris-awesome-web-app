@@ -6,11 +6,12 @@ export const ListContainer = styled.div`
   flex-wrap: wrap;
   width: 83vw;
   justify-content: center;
-  margin: 45px 24px 0 24px;
+  margin: 45px 24px 24px 24px;
 `;
 
 export const BoxContainer = styled.div`
   display: flex;
+  flex-direction: column;
   width: 120px;
   height: 120px;
   margin: 0 20px 20px 0;
@@ -33,4 +34,6 @@ export const Title = styled.div`
 export const Icon = styled.img`
   width: 50px;
   height: 50px;
+  margin-bottom: 5px;
+  color: black;
 `;

@@ -2,13 +2,13 @@ import React, { useEffect } from "react";
 import { useHistory } from "react-router";
 
 import constants from "~/utils/constants";
-import { WelcomeContainer, Greeting } from "./styled";
+import { WelcomeContainer } from "./styled";
 
 const Welcome = () => {
   const history = useHistory();
 
   useEffect(() => {
-    setTimeout(() => history.push(constants.ROUTES.HOME), 2500);
+    setTimeout(() => history.push(constants.ROUTES.HOME), 3000);
   }, []);
 
   return (
@@ -19,7 +19,6 @@ const Welcome = () => {
         frameBorder="0"
         className="giphy-embed"
       ></iframe>
-      <Greeting>Bem vindo!</Greeting>
     </WelcomeContainer>
   );
 };

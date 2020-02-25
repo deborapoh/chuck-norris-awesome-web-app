@@ -18,6 +18,7 @@ import religion from "~/assets/categories/religion.svg";
 import science from "~/assets/categories/science.svg";
 import sport from "~/assets/categories/sport.svg";
 import travel from "~/assets/categories/travel.svg";
+import newCategory from "~/assets/categories/new-category.svg";
 
 export default {
   ROUTES: {
@@ -40,6 +41,7 @@ export default {
     religion,
     science,
     sport,
-    travel
+    travel,
+    newCategory
   }
 };
