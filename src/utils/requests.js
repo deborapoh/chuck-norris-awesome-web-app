@@ -1,96 +1,44 @@
-import axios from 'axios';
+import axios from "axios";
 
-const showToast = () => {};
-
-export const list = async (url, returnResult) => {
+export const get = async (url, returnResult) => {
   try {
-    const { data } = await axios.get(url, {
-      headers: {
-        token: Token.get(),
-      },
-    });
-
+    const { data } = await axios.get(url);
+    console.log("data", data);
+    console.log("returnResult", returnResult);
     return returnResult ? data[returnResult] : data;
   } catch (error) {
     console.log(error);
-    if (error.response && error.response.data) {
-      showToast(error.response.data.message);
-    }
   }
   return false;
 };
 
-export const post = async (url, body, onCatch) => {
+export const post = async (url, body) => {
   try {
-    const { data } = await axios.post(url, body, {
-      headers: {
-        token: Token.get(),
-      },
-    });
-    showToast(data.message);
+    const { data } = await axios.post(url, body);
     return data;
   } catch (error) {
     console.log(error);
-    if (error.response && error.response.data && onCatch) {
-      onCatch(error.response.data.message);
-    }
-    if (!onCatch) {
-      showToast(error.response.data.message);
-    }
   }
   return false;
 };
 
 export const put = async (url, body) => {
   try {
-    const { data } = await axios.put(url, body, {
-      headers: {
-        token: Token.get(),
-      },
-    });
-    showToast(data.message);
+    const { data } = await axios.put(url, body);
     return data;
   } catch (error) {
     console.log(error);
-    if (error.response && error.response.data) {
-      showToast(error.response.data.message);
-    }
   }
   return false;
 };
 
-export const del = async (url) => {
+export const del = async url => {
   try {
-    const { data } = await axios.delete(url, {
-      headers: {
-        token: Token.get(),
-      },
-    });
-    showToast(data.message);
+    const { data } = await axios.delete(url);
+    console.log(data);
     return true;
   } catch (error) {
     console.log(error);
-    if (error.response && error.response.data) {
-      showToast(error.response.data.message);
-    }
-  }
-  return false;
-};
-
-export const patch = async (url, body) => {
-  try {
-    const { data } = await axios.patch(url, body, {
-      headers: {
-        token: Token.get(),
-      },
-    });
-    showToast(data.message);
-    return true;
-  } catch (error) {
-    console.log(error);
-    if (error.response && error.response.data) {
-      showToast(error.response.data.message);
-    }
   }
   return false;
 };
