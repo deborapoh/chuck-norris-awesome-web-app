@@ -4,7 +4,6 @@ export const get = async (url, returnResult) => {
   try {
     const { data } = await axios.get(url);
     console.log("data", data);
-    console.log("returnResult", returnResult);
     return returnResult ? data[returnResult] : data;
   } catch (error) {
     console.log(error);

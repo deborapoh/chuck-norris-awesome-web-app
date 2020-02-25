@@ -23,7 +23,8 @@ import newCategory from "~/assets/categories/new-category.svg";
 export default {
   ROUTES: {
     WELCOME: "/",
-    HOME: "/home"
+    HOME: "/home",
+    JOKE: "/joke"
   },
   CATEGORIES: {
     animal,

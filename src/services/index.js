@@ -1,7 +1,9 @@
 import Categories from "./Categories";
+import Jokes from "./Jokes";
 
 const Services = {
-  Categories
+  Categories,
+  Jokes
 };
 
 export default Services;
