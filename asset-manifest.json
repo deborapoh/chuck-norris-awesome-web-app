@@ -2,8 +2,8 @@
   "files": {
     "static/js/0.42690ede.chunk.js": "/chuck-norris-awesome-web-app/static/js/0.42690ede.chunk.js",
     "static/js/0.42690ede.chunk.js.map": "/chuck-norris-awesome-web-app/static/js/0.42690ede.chunk.js.map",
-    "main.js": "/chuck-norris-awesome-web-app/static/js/main.6dc4c26a.chunk.js",
-    "main.js.map": "/chuck-norris-awesome-web-app/static/js/main.6dc4c26a.chunk.js.map",
+    "main.js": "/chuck-norris-awesome-web-app/static/js/main.570bde0c.chunk.js",
+    "main.js.map": "/chuck-norris-awesome-web-app/static/js/main.570bde0c.chunk.js.map",
     "runtime-main.js": "/chuck-norris-awesome-web-app/static/js/runtime-main.c7008906.js",
     "runtime-main.js.map": "/chuck-norris-awesome-web-app/static/js/runtime-main.c7008906.js.map",
     "static/js/3.aba172c2.chunk.js": "/chuck-norris-awesome-web-app/static/js/3.aba172c2.chunk.js",
@@ -18,8 +18,8 @@
     "static/js/7.9fdb7e8e.chunk.js.map": "/chuck-norris-awesome-web-app/static/js/7.9fdb7e8e.chunk.js.map",
     "index.html": "/chuck-norris-awesome-web-app/index.html",
     "index.html.gz": "/chuck-norris-awesome-web-app/index.html.gz",
-    "precache-manifest.0f604b8f3132f72fde98edf48b958cde.js": "/chuck-norris-awesome-web-app/precache-manifest.0f604b8f3132f72fde98edf48b958cde.js",
-    "precache-manifest.0f604b8f3132f72fde98edf48b958cde.js.gz": "/chuck-norris-awesome-web-app/precache-manifest.0f604b8f3132f72fde98edf48b958cde.js.gz",
+    "precache-manifest.83109c8654293cf768d949b97d02da36.js": "/chuck-norris-awesome-web-app/precache-manifest.83109c8654293cf768d949b97d02da36.js",
+    "precache-manifest.83109c8654293cf768d949b97d02da36.js.gz": "/chuck-norris-awesome-web-app/precache-manifest.83109c8654293cf768d949b97d02da36.js.gz",
     "service-worker.js": "/chuck-norris-awesome-web-app/service-worker.js",
     "service-worker.js.gz": "/chuck-norris-awesome-web-app/service-worker.js.gz",
     "static/js/0.42690ede.chunk.js.gz": "/chuck-norris-awesome-web-app/static/js/0.42690ede.chunk.js.gz",
@@ -36,8 +36,8 @@
     "static/js/6.afea8853.chunk.js.map.gz": "/chuck-norris-awesome-web-app/static/js/6.afea8853.chunk.js.map.gz",
     "static/js/7.9fdb7e8e.chunk.js.gz": "/chuck-norris-awesome-web-app/static/js/7.9fdb7e8e.chunk.js.gz",
     "static/js/7.9fdb7e8e.chunk.js.map.gz": "/chuck-norris-awesome-web-app/static/js/7.9fdb7e8e.chunk.js.map.gz",
-    "static/js/main.6dc4c26a.chunk.js.gz": "/chuck-norris-awesome-web-app/static/js/main.6dc4c26a.chunk.js.gz",
-    "static/js/main.6dc4c26a.chunk.js.map.gz": "/chuck-norris-awesome-web-app/static/js/main.6dc4c26a.chunk.js.map.gz",
+    "static/js/main.570bde0c.chunk.js.gz": "/chuck-norris-awesome-web-app/static/js/main.570bde0c.chunk.js.gz",
+    "static/js/main.570bde0c.chunk.js.map.gz": "/chuck-norris-awesome-web-app/static/js/main.570bde0c.chunk.js.map.gz",
     "static/js/runtime-main.c7008906.js.gz": "/chuck-norris-awesome-web-app/static/js/runtime-main.c7008906.js.gz",
     "static/js/runtime-main.c7008906.js.map.gz": "/chuck-norris-awesome-web-app/static/js/runtime-main.c7008906.js.map.gz",
     "static/media/animal.svg": "/chuck-norris-awesome-web-app/static/media/animal.bf3e5c26.svg",
@@ -83,6 +83,6 @@
   "entrypoints": [
     "static/js/runtime-main.c7008906.js",
     "static/js/3.aba172c2.chunk.js",
-    "static/js/main.6dc4c26a.chunk.js"
+    "static/js/main.570bde0c.chunk.js"
   ]
 }

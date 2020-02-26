@@ -28,8 +28,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/chuck-norris-awesome-web-app/static/js/7.9fdb7e8e.chunk.js"
   },
   {
-    "revision": "6d16f99d7f26e50cb9e8",
-    "url": "/chuck-norris-awesome-web-app/static/js/main.6dc4c26a.chunk.js"
+    "revision": "743c66b9e7759d39c9f9",
+    "url": "/chuck-norris-awesome-web-app/static/js/main.570bde0c.chunk.js"
   },
   {
     "revision": "52ef41260d9d163cdca9",
