@@ -1,4 +1,7 @@
+// Node modules imports
 import styled from "styled-components";
+
+// Utils imports
 import colors from "~/utils/colors";
 
 export const FooterStyle = styled.div`

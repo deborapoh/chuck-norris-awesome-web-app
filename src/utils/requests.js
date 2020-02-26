@@ -1,9 +1,9 @@
+// Node modules imports
 import axios from "axios";
 
 export const get = async (url, returnResult) => {
   try {
     const { data } = await axios.get(url);
-    console.log("data", data);
     return returnResult ? data[returnResult] : data;
   } catch (error) {
     console.log(error);
@@ -33,8 +33,7 @@ export const put = async (url, body) => {
 
 export const del = async url => {
   try {
-    const { data } = await axios.delete(url);
-    console.log(data);
+    await axios.delete(url);
     return true;
   } catch (error) {
     console.log(error);

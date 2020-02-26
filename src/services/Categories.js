@@ -1,10 +1,15 @@
-// import { ROOT_URL } from '../config';
 import { get } from "~/utils/requests";
+
+// import { ROOT_URL } from '../config';
 const ROOT_URL = "https://api.chucknorris.io";
 
 const Categories = {
   async get() {
-    return await get(`${ROOT_URL}/jokes/categories`);
+    try {
+      return await get(`${ROOT_URL}/jokes/categories`);
+    } catch (error) {
+      console.log(error);
+    }
   }
 };
 

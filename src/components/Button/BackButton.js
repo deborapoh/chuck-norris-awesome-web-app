@@ -1,6 +1,8 @@
+// Node modules imports
 import React from "react";
 import PropTypes from "prop-types";
 
+// Style imports
 import { SmallButton, BackIcon } from "./styled";
 
 const BackButton = ({ to }) => (

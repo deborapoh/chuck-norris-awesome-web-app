@@ -1,7 +1,12 @@
+// Node modules imports
 import React from "react";
 import PropTypes from "prop-types";
 
+// Style imports
 import { BigButton } from "./styled";
+
+//Utils imports
+import { translate } from "~/utils/translation";
 
 const Button = ({ to, text }) => <BigButton onClick={to}>{text}</BigButton>;
 
@@ -12,7 +17,7 @@ Button.propTypes = {
 };
 
 Button.defaultProps = {
-  text: "Insira um texto aqui"
+  text: translate({ id: "button.default.text" })
 };
 
 export default Button;

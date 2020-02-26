@@ -2,6 +2,7 @@
  * App constants
  */
 
+// Image imports
 import animal from "~/assets/categories/animal.svg";
 import career from "~/assets/categories/career.svg";
 import celebrity from "~/assets/categories/celebrity.svg";

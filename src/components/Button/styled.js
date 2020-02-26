@@ -1,6 +1,11 @@
+// Node modules imports
+// Style imports
 import styled from "styled-components";
 
+// Utils imports
 import colors from "~/utils/colors";
+
+// Image imports
 import arrowLeft from "~/assets/icons/arrow-left.svg";
 import thankYou from "~/assets/icons/thank-you.svg";
 

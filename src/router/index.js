@@ -1,5 +1,8 @@
+// Node modules imports
 import React, { useState, useEffect } from "react";
 import { Switch, Route } from "react-router-dom";
+
+// Style imports
 import GlobalStyles from "~/styles/GlobalStyle";
 
 const Router = () => {
