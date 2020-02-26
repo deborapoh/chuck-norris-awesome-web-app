@@ -1,23 +1,24 @@
-import React, { useEffect, useContext, useState } from "react";
+import React, { useEffect, useContext } from "react";
 import Services from "~/services";
-import { JokeContainer, Title, Content } from "./styled";
+import { JokeContainer, Title, Content, JokeIcon } from "./styled";
 import AppContext from "~/store/AppContext";
-import BackButton from "~/components/BackButton";
+import BackButton from "~/components/Button/BackButton";
+import Button from "~/components/Button";
+import Footer from "~/components/Footer";
 import { translate } from "~/utils/translation";
 import constants from "~/utils/constants";
 
 const Joke = ({ history }) => {
-  const { selectedCategory } = useContext(AppContext);
-  const [joke, setJoke] = useState("");
+  const {
+    selectedCategory,
+    currentJoke,
+    setCurrentJoke,
+    icon,
+    setIcon
+  } = useContext(AppContext);
 
   useEffect(() => {
-    const fetchData = async () => {
-      const response = await Services.Jokes.get_random_by_category(
-        selectedCategory
-      );
-      setJoke(response.value);
-    };
-    fetchData();
+    _handleNewJoke();
   }, []);
 
   const _handleBack = e => {
@@ -25,6 +26,14 @@ const Joke = ({ history }) => {
     e.preventDefault();
 
     history.goBack();
+  };
+
+  const _handleNewJoke = async () => {
+    const response = await Services.Jokes.get_random_by_category(
+      selectedCategory
+    );
+    setCurrentJoke(response.value);
+    setIcon(response.icon_url);
   };
 
   const translatedDescription =
@@ -36,7 +45,12 @@ const Joke = ({ history }) => {
     <JokeContainer>
       <BackButton to={_handleBack} />
       <Title>{translatedDescription}</Title>
-      <Content>{joke}</Content>
+      <Content>
+        <JokeIcon icon_url={icon} />
+        {currentJoke}
+        <Button to={_handleNewJoke} text="Carregar outra" />
+      </Content>
+      <Footer />
     </JokeContainer>
   );
 };

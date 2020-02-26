@@ -10,5 +10,6 @@ export default {
   black: "#000000",
   darkGray: "#191919",
   lightGray: "#f7f7f7",
-  mediumGray: "#cfd8dc"
+  mediumGray: "#cfd8dc",
+  green: "#00bbc4"
 };

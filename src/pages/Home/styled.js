@@ -5,32 +5,43 @@ export const HomeContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   width: 100vw;
-  height: 100%;
-  background-color: ${colors.lightGray};
+  height: 100vh;
+  background-color: ${colors.green};
+`;
+
+export const ContentContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 100vw;
+  height: 70vh;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  background-color: ${colors.white};
 `;
 
 export const Title = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100vw;
   height: 100px;
-  padding: 50px 24px 24px 64px;
-  font-size: 32px;
+  margin-top: 80px;
+  font-size: 29px;
   font-weight: 800;
-  color: ${colors.font};
-  background-color: ${colors.white};
-`;
-
-export const BottomLine = styled.div`
-  width: 100vw;
-  height: 2px;
-  background-color: ${colors.lightGray};
+  color: ${colors.white};
 `;
 
 export const SubTitle = styled.div`
-  width: 100vw;
-  height: 40px;
-  padding: 30px 24px 24px 64px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: center;
+  width: 70vw;
+  height: 100px;
   font-size: 24px;
-  color: ${colors.font};
-  background-color: ${colors.white};
+  color: ${colors.white};
 `;
