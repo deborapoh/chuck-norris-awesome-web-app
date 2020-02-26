@@ -8,9 +8,10 @@ const GlobalTitle = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100vw;
+  text-align: center;
+  width: 90vw;
   height: 100px;
-  margin-top: 80px;
+  margin-top: 90px;
   font-size: 29px;
   font-weight: 800;
   color: ${colors.white};
