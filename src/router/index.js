@@ -23,7 +23,7 @@ const Router = () => {
   return (
     <>
       <GlobalStyles />
-      <HashRouter basename="/chuck-norris-awesome-web-app">
+      <HashRouter basename="/">
         {nav &&
           nav.map(({ name, path, loader: { default: Component } }) => (
             <Route
