@@ -1,0 +1,20 @@
+{
+  "home.title": "CHUCK NORRIS FACTS",
+  "home.subtitle": "Select a category and be amazed",
+  "category.animal": "Animal",
+  "category.career": "Career",
+  "category.celebrity": "Celebrity",
+  "category.dev": "Dev",
+  "category.explicit": "Explicit",
+  "category.fashion": "Fashion",
+  "category.food": "Food",
+  "category.history": "History",
+  "category.money": "Money",
+  "category.movie": "Movie",
+  "category.music": "Music",
+  "category.political": "Political",
+  "category.religion": "Religion",
+  "category.science": "Science",
+  "category.sport": "Sport",
+  "category.travel": "Travel"
+}
