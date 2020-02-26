@@ -3,11 +3,12 @@ import Services from "~/services";
 import { JokeContainer, Title, Content } from "./styled";
 import AppContext from "~/store/AppContext";
 import BackButton from "~/components/BackButton";
+import { translate } from "~/utils/translation";
+import constants from "~/utils/constants";
 
 const Joke = ({ history }) => {
   const { selectedCategory } = useContext(AppContext);
   const [joke, setJoke] = useState("");
-  console.log("selectedCategory2", selectedCategory);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -15,7 +16,6 @@ const Joke = ({ history }) => {
         selectedCategory
       );
       setJoke(response.value);
-      console.log("response", response);
     };
     fetchData();
   }, []);
@@ -27,10 +27,15 @@ const Joke = ({ history }) => {
     history.goBack();
   };
 
+  const translatedDescription =
+    constants.CATEGORIES[selectedCategory] !== undefined
+      ? translate({ id: `category.${selectedCategory}` })
+      : selectedCategory;
+
   return (
     <JokeContainer>
       <BackButton to={_handleBack} />
-      <Title>{selectedCategory}</Title>
+      <Title>{translatedDescription}</Title>
       <Content>{joke}</Content>
     </JokeContainer>
   );

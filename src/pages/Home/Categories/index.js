@@ -4,11 +4,17 @@ import { BoxContainer, ListContainer, Icon } from "./styled";
 import constants from "~/utils/constants";
 import Services from "~/services";
 import AppContext from "~/store/AppContext";
+import { translate } from "~/utils/translation";
 
 const Category = ({ icon, description }) => {
   const { setSelectedCategory } = useContext(AppContext);
   const history = useHistory();
   icon = icon ? icon : constants.CATEGORIES.newCategory;
+
+  const translatedDescription =
+    constants.CATEGORIES[description] !== undefined
+      ? translate({ id: `category.${description}` })
+      : description;
 
   const _handleClick = () => {
     setSelectedCategory(description);
@@ -18,7 +24,7 @@ const Category = ({ icon, description }) => {
   return (
     <BoxContainer onClick={_handleClick}>
       <Icon src={icon} />
-      {description}
+      {translatedDescription}
     </BoxContainer>
   );
 };
