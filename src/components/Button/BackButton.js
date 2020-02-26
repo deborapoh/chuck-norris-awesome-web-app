@@ -1,12 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import { BackButtonStyle, BackIcon } from "./styled";
+import { SmallButton, BackIcon } from "./styled";
 
 const BackButton = ({ to }) => (
-  <BackButtonStyle onClick={to}>
+  <SmallButton onClick={to}>
     <BackIcon alt="back" />
-  </BackButtonStyle>
+  </SmallButton>
 );
 
 BackButton.propTypes = {
