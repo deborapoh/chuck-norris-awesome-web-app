@@ -7,8 +7,9 @@ import Button from "~/components/Button";
 import Footer from "~/components/Footer";
 
 // Style imports
-import { Title, Content, JokeIcon } from "./styled";
+import { Content, JokeIcon } from "./styled";
 import GlobalContainer from "~/styles/GlobalContainer";
+import GlobalTitle from "~/styles/GlobalTitle";
 
 // Utils imports
 import { translate } from "~/utils/translation";
@@ -56,7 +57,7 @@ const Joke = ({ history }) => {
   return (
     <GlobalContainer>
       <BackButton to={_handleBack} />
-      <Title>{translatedDescription}</Title>
+      <GlobalTitle>{translatedDescription}</GlobalTitle>
       <Content>
         <JokeIcon icon_url={icon} />
         {currentJoke}

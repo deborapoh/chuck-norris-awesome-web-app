@@ -17,5 +17,10 @@ export const routes = async () =>
       name: "JOKE",
       path: `${constants.ROUTES.JOKE}/:category`,
       loader: await import("../pages/Joke")
+    },
+    {
+      name: "THANKS-PAGE",
+      path: constants.ROUTES.THANKS_PAGE,
+      loader: await import("../pages/ThanksPage")
     }
   ]);

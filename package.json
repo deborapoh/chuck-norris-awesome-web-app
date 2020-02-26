@@ -1,5 +1,5 @@
 {
-  "homepage": "https://deborapoh.github.io/chucknorris",
+  "homepage": "https://deborapoh.github.io/chuck-norris-awesome-web-app",
   "name": "chuck-norris-awesome-web-app",
   "version": "0.1.0",
   "private": true,
@@ -20,13 +20,13 @@
     "yarn": "^1.22.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-app-rewired start",
     "build": "react-app-rewired build",
     "test": "react-app-rewired test",
     "eject": "react-scripts eject",
-    "lint": "eslint ./src/ --fix",
-    "predeploy": "yarn run build",
-    "deploy": "gh-pages -b master -d build"
+    "lint": "eslint ./src/ --fix"
   },
   "eslintConfig": {
     "extends": "react-app"

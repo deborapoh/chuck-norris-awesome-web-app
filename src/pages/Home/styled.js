@@ -15,26 +15,3 @@ export const ContentContainer = styled.div`
   border-top-right-radius: 30px;
   background-color: ${colors.white};
 `;
-
-export const Title = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100vw;
-  height: 100px;
-  margin-top: 80px;
-  font-size: 29px;
-  font-weight: 800;
-  color: ${colors.white};
-`;
-
-export const SubTitle = styled.div`
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  text-align: center;
-  width: 70vw;
-  height: 100px;
-  font-size: 24px;
-  color: ${colors.white};
-`;

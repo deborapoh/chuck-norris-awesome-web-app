@@ -1,6 +1,6 @@
 // Node modules imports
 import React, { useState, useEffect } from "react";
-import { Switch, Route } from "react-router-dom";
+import { HashRouter, Route } from "react-router-dom";
 
 // Style imports
 import GlobalStyles from "~/styles/GlobalStyle";
@@ -23,7 +23,7 @@ const Router = () => {
   return (
     <>
       <GlobalStyles />
-      <Switch>
+      <HashRouter basename="/chuck-norris-awesome-web-app">
         {nav &&
           nav.map(({ name, path, loader: { default: Component } }) => (
             <Route
@@ -33,7 +33,7 @@ const Router = () => {
               render={props => <Component {...props} />}
             />
           ))}
-      </Switch>
+      </HashRouter>
     </>
   );
 };

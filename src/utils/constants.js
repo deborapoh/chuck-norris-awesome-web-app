@@ -26,9 +26,10 @@ import messages_pt from "~/translations/pt.json";
 
 export default {
   ROUTES: {
-    WELCOME: "/chucknorris",
+    WELCOME: "/",
     HOME: "/home",
-    JOKE: "/joke"
+    JOKE: "/joke",
+    THANKS_PAGE: "/thanks-page"
   },
   CATEGORIES: {
     animal,
@@ -52,5 +53,39 @@ export default {
   MESSAGES_LANGUAGES: {
     en: messages_en,
     pt: messages_pt
-  }
+  },
+  ICON_THANKS: [
+    {
+      name: "Freepik",
+      url: "https://www.flaticon.com/br/autores/freepik"
+    },
+    {
+      name: "Nhor Phai",
+      url: "https://www.flaticon.com/br/autores/nhor-phai"
+    },
+    {
+      name: "Freepik",
+      url: "https://www.flaticon.com/br/<?=_('authors/')?>freepik"
+    },
+    {
+      name: "Pixel perfect",
+      url: "https://www.flaticon.com/authors/pixel-perfect"
+    },
+    {
+      name: "Those Icons",
+      url: "https://www.flaticon.com/authors/those-icons"
+    },
+    {
+      name: "Good Ware",
+      url: "https://www.flaticon.com/br/autores/good-ware"
+    },
+    {
+      name: "Tomas Knop",
+      url: "https://www.flaticon.com/<?=_('authors/')?>tomas-knop"
+    },
+    {
+      name: "Google",
+      url: "https://www.flaticon.com/authors/google"
+    }
+  ]
 };
