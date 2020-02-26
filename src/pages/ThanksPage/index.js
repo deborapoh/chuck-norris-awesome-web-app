@@ -4,10 +4,10 @@ import React from "react";
 // Components imports
 import BackButton from "~/components/Button/BackButton";
 import Footer from "~/components/Footer";
+import ThanksItem from "~/components/ThanksItem";
 
 // Style imports
 import { Content } from "./styled";
-import ThanksItem from "./ThanksItem";
 import GlobalContainer from "~/styles/GlobalContainer";
 import GlobalTitle from "~/styles/GlobalTitle";
 import GlobalSubTitle from "~/styles/GlobalSubTitle";

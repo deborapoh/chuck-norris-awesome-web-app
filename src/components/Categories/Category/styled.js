@@ -1,13 +1,17 @@
 // Node modules imports
 import styled from "styled-components";
 
+// Utils imports
+import colors from "~/utils/colors";
+
 export const Container = styled.div`
   display: flex;
   cursor: pointer;
   width: 160px;
-  height: 110px;
+  height: 130px;
   justify-content: center;
   align-items: center;
+  margin: 0;
 `;
 
 export const BoxContainer = styled.div`
@@ -16,7 +20,7 @@ export const BoxContainer = styled.div`
   cursor: pointer;
   width: 140px;
   height: 90px;
-  background-color: white;
+  background-color: ${colors.white};
   justify-content: center;
   align-items: center;
   border-radius: 15px;
@@ -27,5 +31,5 @@ export const Icon = styled.img`
   width: 40px;
   height: 40px;
   margin-bottom: 5px;
-  color: black;
+  color: ${colors.black};
 `;

@@ -5,7 +5,7 @@ import React, { useEffect, useState } from "react";
 import { ListContainer } from "./styled";
 
 // Components imports
-import Category from "~/components/Category";
+import Category from "./Category";
 
 // Utils imports
 import constants from "~/utils/constants";

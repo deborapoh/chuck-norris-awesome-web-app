@@ -5,7 +5,7 @@ import { useHistory } from "react-router";
 // Components imports
 import ThanksButton from "~/components/Button/ThanksButton";
 import Footer from "~/components/Footer";
-import Categories from "./Categories";
+import Categories from "~/components/Categories";
 
 // Style imports
 import { ContentContainer } from "./styled";
