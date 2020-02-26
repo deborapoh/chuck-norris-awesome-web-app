@@ -12,16 +12,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/chuck-norris-awesome-web-app/static/js/3.2f2b67d8.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "5330f6a164993092c882",
-    "url": "/chuck-norris-awesome-web-app/static/js/4.7a382aaf.chunk.js"
+    "revision": "0af2dfee8b9b9626db99",
+    "url": "/chuck-norris-awesome-web-app/static/js/4.388dc71a.chunk.js"
   },
   {
     "revision": "ee687a9d7ceaef297cc8",
     "url": "/chuck-norris-awesome-web-app/static/js/5.c3d6cddb.chunk.js"
   },
   {
-    "revision": "11fbb45c2e90ee72136b",
-    "url": "/chuck-norris-awesome-web-app/static/js/6.2cb2cd61.chunk.js"
+    "revision": "1f66c24f9394cccbe480",
+    "url": "/chuck-norris-awesome-web-app/static/js/6.b7e6693f.chunk.js"
   },
   {
     "revision": "6b678e465638c278fa17",
@@ -32,8 +32,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/chuck-norris-awesome-web-app/static/js/main.30d06120.chunk.js"
   },
   {
-    "revision": "23c55104d5fc71326e72",
-    "url": "/chuck-norris-awesome-web-app/static/js/runtime-main.7a0a3c53.js"
+    "revision": "ed6775f4517043df218a",
+    "url": "/chuck-norris-awesome-web-app/static/js/runtime-main.f90e93f7.js"
   },
   {
     "revision": "bf3e5c26ba4924dc5881bd3f96683318",
