@@ -2,10 +2,16 @@
 import React from "react";
 import Router from "~/router";
 import { IntlProvider } from "react-intl";
+
+// Style imports
+import GlobalStyle from "~/styles/GlobalStyle";
+
+// Utils imports
+import constants from "~/utils/constants";
+
+// Context imports
 import AppContext from "~/store/AppContext";
 import store from "~/store";
-import GlobalStyle from "~/styles/GlobalStyle";
-import constants from "~/utils/constants";
 
 const App = () => (
   <IntlProvider

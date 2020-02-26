@@ -16,5 +16,7 @@
   "category.religion": "Religião",
   "category.science": "Ciência",
   "category.sport": "Esporte",
-  "category.travel": "Viagem"
+  "category.travel": "Viagem",
+  "button.default.text": "Insira um texto aqui",
+  "joke.index.button": "Carregar outra"
 }

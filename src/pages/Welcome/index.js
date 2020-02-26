@@ -1,8 +1,12 @@
+// Node modules imports
 import React, { useEffect } from "react";
 import { useHistory } from "react-router";
 
-import constants from "~/utils/constants";
+// Style imports
 import { WelcomeContainer } from "./styled";
+
+// Utils imports
+import constants from "~/utils/constants";
 
 const Welcome = () => {
   const history = useHistory();

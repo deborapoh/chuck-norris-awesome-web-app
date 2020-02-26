@@ -1,12 +1,24 @@
+// Node modules imports
 import React, { useEffect, useContext } from "react";
-import Services from "~/services";
-import { JokeContainer, Title, Content, JokeIcon } from "./styled";
-import AppContext from "~/store/AppContext";
+
+// Components imports
 import BackButton from "~/components/Button/BackButton";
 import Button from "~/components/Button";
 import Footer from "~/components/Footer";
+
+// Style imports
+import { Title, Content, JokeIcon } from "./styled";
+import GlobalContainer from "~/styles/GlobalContainer";
+
+// Utils imports
 import { translate } from "~/utils/translation";
 import constants from "~/utils/constants";
+
+// Services imports
+import Services from "~/services";
+
+// Context imports
+import AppContext from "~/store/AppContext";
 
 const Joke = ({ history }) => {
   const {
@@ -42,16 +54,19 @@ const Joke = ({ history }) => {
       : selectedCategory;
 
   return (
-    <JokeContainer>
+    <GlobalContainer>
       <BackButton to={_handleBack} />
       <Title>{translatedDescription}</Title>
       <Content>
         <JokeIcon icon_url={icon} />
         {currentJoke}
-        <Button to={_handleNewJoke} text="Carregar outra" />
+        <Button
+          to={_handleNewJoke}
+          text={translate({ id: "joke.index.button" })}
+        />
       </Content>
       <Footer />
-    </JokeContainer>
+    </GlobalContainer>
   );
 };
 

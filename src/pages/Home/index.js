@@ -1,12 +1,20 @@
+// Node modules imports
 import React from "react";
-import Categories from "./Categories";
-import { HomeContainer, ContentContainer, Title, SubTitle } from "./styled";
-import { translate } from "~/utils/translation";
+
+// Components imports
 import ThanksButton from "~/components/Button/ThanksButton";
 import Footer from "~/components/Footer";
+import Categories from "./Categories";
+
+// Style imports
+import { ContentContainer, Title, SubTitle } from "./styled";
+import GlobalContainer from "~/styles/GlobalContainer";
+
+// Utils imports
+import { translate } from "~/utils/translation";
 
 const Home = () => (
-  <HomeContainer>
+  <GlobalContainer>
     <ThanksButton />
     <Title>{translate({ id: "home.title" })}</Title>
     <SubTitle>{translate({ id: "home.subtitle" })}</SubTitle>
@@ -14,7 +22,7 @@ const Home = () => (
       <Categories />
     </ContentContainer>
     <Footer />
-  </HomeContainer>
+  </GlobalContainer>
 );
 
 export default Home;

@@ -1,3 +1,4 @@
+// Node modules imports
 import styled, { css } from "styled-components";
 
 const hideScroll = css`

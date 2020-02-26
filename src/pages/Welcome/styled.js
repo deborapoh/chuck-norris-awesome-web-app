@@ -1,10 +1,11 @@
+// Node modules imports
 import styled from "styled-components";
+import GlobalContainer from "~/styles/GlobalContainer";
 
-export const WelcomeContainer = styled.div`
-  display: flex;
-  width: 100vw;
-  height: 100vh;
-  flex-direction: column;
+// Utils imports
+import colors from "~/utils/colors";
+
+export const WelcomeContainer = styled(GlobalContainer)`
+  background-color: ${colors.white};
   justify-content: center;
-  align-items: center;
 `;

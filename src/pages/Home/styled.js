@@ -1,15 +1,8 @@
+// Node modules imports
 import styled from "styled-components";
-import colors from "~/utils/colors";
 
-export const HomeContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  width: 100vw;
-  height: 100vh;
-  background-color: ${colors.green};
-`;
+// Utils imports
+import colors from "~/utils/colors";
 
 export const ContentContainer = styled.div`
   display: flex;
