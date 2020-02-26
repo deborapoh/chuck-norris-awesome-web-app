@@ -63,7 +63,7 @@ const Joke = ({ history }) => {
         {currentJoke}
         <Button
           to={_handleNewJoke}
-          text={translate({ id: "joke.index.button" })}
+          text={`${translate({ id: "joke.index.button" })}`}
         />
       </Content>
       <Footer />

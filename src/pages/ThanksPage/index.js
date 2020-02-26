@@ -32,8 +32,12 @@ const ThanksPage = ({ history }) => {
         {translate({ id: "thanks.index.subtitle" })}
       </GlobalSubTitle>
       <Content>
-        {constants.ICON_THANKS.map(thanks => (
-          <ThanksItem key={thanks.name} name={thanks.name} url={thanks.url} />
+        {constants.ICON_THANKS.map((thanks, index) => (
+          <ThanksItem
+            key={`thanks.name-${index}`}
+            name={thanks.name}
+            url={thanks.url}
+          />
         ))}
       </Content>
       <Footer />
