@@ -26,7 +26,7 @@ import messages_pt from "~/translations/pt.json";
 
 export default {
   ROUTES: {
-    WELCOME: "/",
+    WELCOME: "/chucknorris",
     HOME: "/home",
     JOKE: "/joke"
   },
