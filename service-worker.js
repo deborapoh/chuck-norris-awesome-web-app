@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/chuck-norris-awesome-web-app/precache-manifest.1ffa59848c1678d512673668e34c4834.js"
+  "/chuck-norris-awesome-web-app/precache-manifest.3c96189fc6df8d3463975aa5d0229e6c.js"
 );
 
 workbox.core.skipWaiting();
