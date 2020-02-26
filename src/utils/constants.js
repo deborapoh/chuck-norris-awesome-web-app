@@ -20,6 +20,9 @@ import sport from "~/assets/categories/sport.svg";
 import travel from "~/assets/categories/travel.svg";
 import newCategory from "~/assets/categories/new-category.svg";
 
+import messages_en from "~/translations/en.json";
+import messages_pt from "~/translations/pt.json";
+
 export default {
   ROUTES: {
     WELCOME: "/",
@@ -44,5 +47,9 @@ export default {
     sport,
     travel,
     newCategory
+  },
+  MESSAGES_LANGUAGES: {
+    en: messages_en,
+    pt: messages_pt
   }
 };
