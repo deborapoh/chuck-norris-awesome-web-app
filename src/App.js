@@ -15,10 +15,8 @@ import store from "~/store";
 
 const App = () => (
   <IntlProvider
-    // locale={constants.LANGUAGE}
-    // messages={constants.MESSAGES_LANGUAGES[constants.LANGUAGE]}
-    locale="en"
-    messages={constants.MESSAGES_LANGUAGES["en"]}
+    locale={constants.LANGUAGE}
+    messages={constants.MESSAGES_LANGUAGES[constants.LANGUAGE]}
   >
     <GlobalStyle />
     <AppContext.Provider value={store()}>

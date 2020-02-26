@@ -50,6 +50,7 @@ export default {
     travel,
     newCategory
   },
+  LANGUAGE: navigator.language.split(/[-_]/)[0],
   MESSAGES_LANGUAGES: {
     en: messages_en,
     pt: messages_pt
