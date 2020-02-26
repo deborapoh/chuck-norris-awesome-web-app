@@ -9,7 +9,7 @@ const GlobalSubTitle = styled.div`
   align-items: flex-start;
   justify-content: center;
   text-align: center;
-  width: 70vw;
+  width: 90vw;
   height: 100px;
   font-size: 24px;
   color: ${colors.white};
